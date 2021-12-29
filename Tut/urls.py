@@ -24,6 +24,7 @@ urlpatterns = [
     path('Contact/', views.contact, name="Contact"),
     path('About', views.about, name="About"),
     path('Classes', views.classes, name="Classes"),
-    path('api/', include('Hello.urls')),
+    path('api/', include('student.urls')),
+    path('api/',include('CLASS.urls')),
 
 ]
